@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+		<title>サイト名　｜　サンプル</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="wrapper clearfix">
+			<div class="left">
+				<!--  メニュー-->
+				<div id="menubtn">
+					<i class="fas fa-bars"></i>
+				</div>
+				<nav class="menu" id="menu">
+					<ul>
+						<a href="index.html"><li>Top</li></a>
+						<a href="main.html"><li>Main</li></a>
+						<!-- <a href="sample.html"><li class="active">Sample</li></a> -->
+						<!-- <a href="link.html"><li>Link</li></a> -->
+						<li class="to-index"><a href="index.html"><img src="img/h1.png" alt="indexへ"></a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="right">
+				<!-- ヘッダー -->
+				<header class="header">
+					<h1>Sample</h1>
+				</header>
+				<!-- コンテンツ -->
+				<div class="contents">
+					<div class="box">
+						<h2>Sample</h2>
+						<p>ご参考までに。。</p>
+						<p>　</p>
+						<h1>&lt;h1&gt;Sample</h1>
+						<h2>&lt;h2&gt;Sample</h2>
+						<h3>&lt;h3&gt;Sample</h3>
+						<h4>&lt;h4&gt;Sample</h4>
+					</div>
+						<h2>&lt;div class="box"&gt;の外で&lt;h2&gt;を使うと、このように両サイドの点線がなくなり、横いっぱいに白背景が広がりますので、ご注意ください。</h2>
+					<!-- フッター　クレジット -->
+					<footer class="footer">
+						<p>Copyright © 2018 サイト名を入れてください</p>
+						<p>Template&Material @ <a href="https://utsusemi.hiroec.com/" target="_blank">空蝉</a></p>
+					</footer>
+				</div>
+
+
+			</div>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+
+				$("#menubtn").click(function(){
+					$("#menu").fadeToggle();
+				});
+
+			});
+		</script>
+	</body>
+</html>

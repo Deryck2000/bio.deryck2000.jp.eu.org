@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>デデオチャンだよ</title>
-        <meta name="description" content="デデオチャンのサイト" />
+	<head>
+		<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+		<title>Deryck2000｜トップ</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<meta name="description" content="デデオチャンのサイト" />
         <meta name="format-detection" content="telephone=no" />
 
         <!-- favicon/webclipicon -->
@@ -21,9 +25,87 @@
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:description" content="モチモチ" />
         <meta name="twitter:image:src" content="https://i.imgur.com/fFyQAnp.png" />
-    </head>
+	</head>
+	<body>
 
-    <body>
-  hi
-  </body>
+	<div class="wrapper clearfix">
+		<div class="left">
+			<!--  メニュー-->
+			<div id="menubtn">
+				<i class="fas fa-bars"></i>
+			</div>
+			<nav class="menu" id="menu">
+				<ul>
+					<a href="index.html"><li class="active">Top</li></a>
+					<a href="main.html"><li>Works</li></a>
+					<!-- <a href="sample.html"><li>Sample</li></a> -->
+					<!-- <a href="link.html"><li>Link</li></a> -->
+					<li class="to-index"><a href="index.html"><img src="img/h1.png" alt="indexへ"></a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<div class="right">
+			<!-- ヘッダー -->
+			<header class="header">
+				<h1>Information</h1>
+			</header>
+			<!-- コンテンツ -->
+			<div class="contents">
+				<div class="box">
+					<h2>About This Site</h2>
+					<p>デデオチャン(Deryck2000)のサイトです<br>
+						よろしくネ・・・♡</p>
+				</div>
+				<div class="box">
+					<h2>What's New</h2>
+					<ul class="news">
+						<li>
+							<time>2023.02.16</time>
+							<span class="text">生まれた</span>
+						</li>
+					</ul>
+				</div>
+				<div class="box">
+					<h2>About Link</h2>
+					<!-- <p>リンクについての注意書きなどがあればここに記載ください。</p> -->
+					<ul class="about-link">
+						<li>
+							<span class="koumoku">Master</span>
+							<span class="text">Deryck2000</span>
+						</li>
+						<li>
+							<span class="koumoku">URL</span>
+							<span class="text"><a href="https://misskey.art/@Deryck" target="_blank">https://misskey.art/@Deryck</a></span>
+						</li>
+						<li class="banner">
+							<img src="img/ban_l.png" alt="バナーL">　<img src="img/ban_m.png" alt="バナーM">　<img src="img/ban_s.png" alt="バナーS">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- フッター　クレジット -->
+			<footer class="footer">
+				<p>Copyright © 2023 Deryck2000</p>
+				<p>Template&Material @ <a href="https://utsusemi.hiroec.com/" target="_blank">空蝉</a></p>
+			</footer>
+		</div>
+
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			$("#menubtn").click(function(){
+				$("#menu").fadeToggle();
+			});
+
+		});
+	</script>
+
+
+
+	</body>
 </html>
