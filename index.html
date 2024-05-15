@@ -1,112 +1,97 @@
 <!DOCTYPE html>
-<html lang="ja">
-	<head>
-		<meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-		<title>Deryck2000｜トップ</title>
-		<link rel="stylesheet" href="css/reset.css?ver=1.0.1">
-		<link rel="stylesheet" href="css/style.css?ver=1.0.1">
-		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-		<meta name="description" content="デデオチャンのサイト" />
-        <meta name="format-detection" content="telephone=no" />
+<html>
+<head>
+  <title>Deryck2000</title>
+  <meta charset="UTF-8" />
 
-        <!-- favicon/webclipicon -->
-        <link rel="icon" href="dedeo_icon.ico" />
+  <!-- Windows XP Theme (include only one theme at a time) -->
+  <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+  <script>
+    function copyToClipboard() {
+          // コピー対象をJavaScript上で変数として定義する
+      var copyTarget = document.getElementById("copyTarget");
 
-        <!-- ogp -->
-        <meta property="og:site_name" content="デデオチャンのサイト" />
-        <meta property="og:url" content="deryck2000.jp.eu.org" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="ホーム" />
-        <meta property="og:description" content="モチモチ" />
-        <meta property="og:image" content="https://i.imgur.com/fFyQAnp.png" />
-        <meta property="og:locale" content="ja_JP" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:description" content="モチモチ" />
-        <meta name="twitter:image:src" content="https://i.imgur.com/fFyQAnp.png" />
-	</head>
-	<body>
+          // コピー対象のテキストを選択する
+      copyTarget.select();
 
-	<div class="wrapper clearfix">
-		<div class="left">
-			<!--  メニュー-->
-			<div id="menubtn">
-				<i class="fas fa-bars"></i>
-			</div>
-			<nav class="menu" id="menu">
-				<ul>
-					<a href="index.html"><li class="active">Top</li></a>
-					<a href="main.html"><li>Works</li></a>
-					<a href="creations.html"><li>Creations</li></a>
-					<!-- <a href="link.html"><li>Link</li></a> -->
-					<li class="to-index"><a href="index.html"><img src="img/h1.png" alt="indexへ"></a></li>
-					
-				</ul>
-			</nav>
-		</div>
+          // 選択しているテキストをクリップボードにコピーする
+      document.execCommand("Copy");
 
-		<div class="right">
-			<!-- ヘッダー -->
-			<header class="header">
-				<h1>Information</h1>
-			</header>
-			<!-- コンテンツ -->
-			<div class="contents">
-				<div class="box">
-					<h2>About This Site</h2>
-					<p>デデオチャン(Deryck2000)のサイトです<br>
-						よろしくネ・・・♡</p>
-				</div>
-				<div class="box">
-					<h2>What's New</h2>
-					<ul class="news">
-						<li>
-							<time>2023.02.16</time>
-							<span class="text">生まれた</span>
-						</li>
-					</ul>
-				</div>
-				<div class="box">
-					<h2>About Link</h2>
-					<!-- <p>リンクについての注意書きなどがあればここに記載ください。</p> -->
-					<ul class="about-link">
-						<li>
-							<span class="koumoku">Master</span>
-							<span class="text">Deryck2000</span>
-						</li>
-						<li>
-							<span class="koumoku">URL</span>
-							<span class="text"><a href="https://misskey.art/@Deryck" target="_blank">https://misskey.art/@Deryck</a></span>
-						</li>
-						<li class="banner">
-							<img src="img/ban_l.png" alt="バナーL">　<img src="img/ban_m.png" alt="バナーM">　<img src="img/ban_s.png" alt="バナーS">
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!-- フッター　クレジット -->
-			<footer class="footer">
-				<p>Copyright © 2023 Deryck2000</p>
-				<p>Template&Material @ <a href="https://utsusemi.hiroec.com/" target="_blank">空蝉</a></p>
-			</footer>
-		</div>
+          // コピーをお知らせする
+      alert("Copied! : " + copyTarget.value);
+    }
+  </script>
+  <style>
+    .body {
+      position: relative;
+    }
+    .whcontent {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 400px;
+      height: 300px;
+/*    background: #99f;*/
+}
+.flex {
+display: flex;
+flex-start;
+}
+.dedeo_icon{
+margin-right: 10px;
+}
+body {
+  background-image: url("bg.jpg");
+  background-size: cover;
+}
+.foot {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+</style>
 
-	</div>
+</head>
 
+<body>
+<div class="whcontent">
+  <div class="window" style="width: 400px">
+    <div class="title-bar">
+      <div class="title-bar-text">C:/Users/User/deryck2000.exe</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <div class="flex">
+        <img src="dedeo_icon.gif" width="100px" height="100px" class="dedeo_icon">
+        <div>
+          <b><p>Hi I'm Deryck2000</p></b>
+          <p>Artist, 3D Modeler</p>
+          <hr>
+          <b><p>Links:</p></b>
+          <p>Fediverse</br>
+            <a href="https://misskey.art/@Deryck" target="_blank">@Deryck@misskey.art</a></p>
+            <p>Twitter<br><a href="https://twitter.com/hallcudy" target="_blank">@hallcudy</a><br><a href="https://twitter.com/Deryck2000" target="_blank">@Deryck2000</a></p>
+                        <p>Discord:<br><input id="copyTarget" type="text" value="deryck2000" readonly><button onclick="copyToClipboard()">Copy</button></p>
+          <hr>
+        <p>CSS by <a href="https://botoxparty.github.io/XP.css/">XP.css</a></p>
+          </div>
 
-	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-	<script type="text/javascript">
-		$(function(){
+        </div>
+      </div>
+    </div>
+  </div>
 
-			$("#menubtn").click(function(){
-				$("#menu").fadeToggle();
-			});
+</body>
+<footer>
+  <div class="foot"><span style="background-color:rgba(255, 255, 255, 0.4)">Photo by <a href="https://unsplash.com/@karpic?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Karp.</a> on <a href="https://unsplash.com/photos/green-grass-field-under-blue-sky-during-daytime-EJIFu_veczw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></span>
+  </div>
 
-		});
-	</script>
-
-
-
-	</body>
+</footer>
 </html>
